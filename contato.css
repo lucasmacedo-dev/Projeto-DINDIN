@@ -1,0 +1,396 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html, body {
+ font-family:'ubuntu',sans-serif ;
+ box-sizing: border-box;
+}
+
+/* //Inicio do style do Header// */
+header{
+  background-color:#2E948A ;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+  min-height: 117px;
+  box-sizing: border-box;
+  padding: 20px;
+  
+}
+
+.container{
+  display: flex;
+  justify-content:space-between ;
+  justify-items: center;
+  align-items: center;
+  max-width: 1440px;
+  padding: 0px 103px 0px 82px;
+
+}
+
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+header a{
+text-decoration: none;
+margin: 20px;
+font-size: 20px;
+font-weight: 700;
+}
+
+header img{
+  display:flex ;
+  align-items: center;
+}
+
+/* Fim do style do Header */
+#formulario{
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  padding: 82px;
+}
+
+h1{
+  font-size: 40px;
+  font-weight: 700;
+  color: #FF4081;
+  margin-bottom: 35px;
+}
+
+#form-name{
+  border: #686868 1px solid;
+  width: 493px;
+  height: 32px;
+  border-radius: 7px;
+  padding: 0px 10px;
+  margin-bottom: 15px;
+}
+
+#form-email{
+  border: #686868 1px solid;
+  width: 493px;
+  height: 32px;
+  border-radius: 7px;
+  padding: 0px 10px;
+  margin-bottom: 15px;
+}
+
+#form-messenger{
+  border: #686868 1px solid;
+  width: 493px;
+  height: 200px;
+  font-family:'Ubuntu',sans-serif;
+  font-size: 14px;
+  text-align: start ;
+  padding: 10px 8px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+}
+
+#form-send {
+  background-color: #FF4081;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  width: 108px;
+  height: 32px;
+
+}
+
+
+
+/*Inicio do style do Footer  */
+
+footer{
+  height: 65px;
+  background-color: #2E948A;
+  min-height: 207px;
+  box-sizing: border-box;
+
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  padding: 0px 137px 0px 128px;
+
+}
+#nav-footer1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 400;
+  gap: 10px;
+  padding: 53px 0px 71px 0px;
+  line-height: 23px;
+}
+
+#nav-footer2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+ 
+}
+
+#nav-footer2 a{
+  align-self: center;
+  font-size: 20px;
+  font-weight: 700;
+  border: 2px solid;
+  border-radius: 62px;
+  padding: 15px 40px;
+
+}
+/* //Fim do design do footer */
+
+@media (max-width: 1207px) {
+
+  #formulario{
+    display: flex;
+    gap: 40px;
+    
+  }
+}
+
+@media (max-width: 1091px) {
+
+  #formulario{
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 1069px) {
+
+  #formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items:center ;
+    padding: 40px;
+  }
+
+  .imagem-form{
+
+  }
+}
+
+@media (max-width: 651px) {
+
+  #formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items:center ;
+    padding: 40px;
+    box-sizing: border-box;
+    min-height: 300px;
+  }
+
+  .imagem-form {
+    display: flex;
+    justify-content: center;
+    
+    width: 380px;
+    height: 380px;
+  }
+
+  #form-name{
+    border: #686868 1px solid;
+    width: 400px;
+    height: 32px;
+    border-radius: 7px;
+    padding: 0px 10px;
+    margin-bottom: 15px;
+  }
+  
+  #form-email{
+    border: #686868 1px solid;
+    width: 400px;
+    height: 32px;
+    border-radius: 7px;
+    padding: 0px 10px;
+    margin-bottom: 15px;
+  }
+  
+  #form-messenger{
+    border: #686868 1px solid;
+    width: 403px;
+    height: 200px;
+    font-family:'Ubuntu',sans-serif;
+    font-size: 14px;
+    text-align: start ;
+    padding: 10px 8px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+  }
+  
+  #form-send {
+    background-color: #FF4081;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    width: 108px;
+    height: 32px;
+  
+  }
+}
+
+
+@media (max-width: 501px) {
+
+  #formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items:center ;
+    padding: 40px;
+    box-sizing: border-box;
+    
+  }
+
+  .imagem-form {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 352px;
+  }
+
+  #form-name{
+    border: #686868 1px solid;
+    width: 380px;
+    height: 32px;
+    border-radius: 7px;
+    padding: 0px 10px;
+    margin-bottom: 15px;
+  }
+  
+  #form-email{
+    border: #686868 1px solid;
+    width: 380px;
+    height: 32px;
+    border-radius: 7px;
+    padding: 0px 10px;
+    margin-bottom: 15px;
+  }
+  
+  #form-messenger{
+    border: #686868 1px solid;
+    width: 380px;
+    height: 200px;
+    font-family:'Ubuntu',sans-serif;
+    font-size: 14px;
+    text-align: start ;
+    padding: 10px 8px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+  }
+  
+  #form-send {
+    background-color: #FF4081;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    width: 108px;
+    height: 32px;
+  
+  }
+}
+
+@media (max-width: 449px) {
+
+  #formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items:center ;
+    padding: 40px;
+    box-sizing: border-box;
+    
+  }
+
+  .imagem-form {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 302px;
+  }
+
+  #form-name{
+    border: #686868 1px solid;
+    width: 302px;
+    height: 32px;
+    border-radius: 7px;
+    padding: 0px 10px;
+    margin-bottom: 15px;
+  }
+  
+  #form-email{
+    border: #686868 1px solid;
+    width: 302px;
+    height: 32px;
+    border-radius: 7px;
+    padding: 0px 10px;
+    margin-bottom: 15px;
+  }
+  
+  #form-messenger{
+    border: #686868 1px solid;
+    width: 305px;
+    height: 200px;
+    font-family:'Ubuntu',sans-serif;
+    font-size: 14px;
+    text-align: start ;
+    padding: 10px 8px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+  }
+  
+  #form-send {
+    background-color: #FF4081;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    width: 108px;
+    height: 32px;
+  
+  }
+}
